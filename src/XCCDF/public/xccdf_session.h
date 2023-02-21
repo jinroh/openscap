@@ -624,6 +624,9 @@ OSCAP_API int xccdf_session_generate_guide(struct xccdf_session *session, const 
  */
 OSCAP_API int xccdf_session_export_all(struct xccdf_session *session);
 
+struct xccdf_rule_result_iterator;
+OSCAP_API struct xccdf_rule_result_iterator *xccdf_session_get_rule_results(const struct xccdf_session *item);
+
 /// @}
 /// @}
 #endif
